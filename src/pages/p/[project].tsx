@@ -37,21 +37,22 @@ export default function Project() {
             getProjectData();
         }
     }, [project]);
-    
+
     return (
         <>
             <h1 className="text-6xl font-bold text-center">Project</h1>
             <div>
                 {isLoading ? (
                     <h1>Loading...</h1>
-                ) : projectData ? (
+                ) : !projectData ? (
+                    <h1>Project not found.</h1>
+                ) : (
+                    
                     <div>
                         <h1>{projectData.title}</h1>
                         <h2>{projectData.tagline}</h2>
                         <p>{projectData.description}</p>
                     </div>
-                ) : (
-                    <h1>Project not found.</h1>
                 )}
             </div>
         </>
