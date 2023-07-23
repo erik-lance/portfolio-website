@@ -7,6 +7,8 @@ import IconButton from '@mui/material/IconButton'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkIcon from '@mui/icons-material/Link'
 
+import { Chip, Stack } from '@mui/material'
+
 interface ProjectTileProps {
     name: string;
     tagline: string;
@@ -33,6 +35,19 @@ export default function ProjectTile(
             />
 
             <CardContent>
+                <Stack direction="row" spacing={1}>
+                {tech.map((tech) => (
+                    <Chip 
+                        label={tech} 
+                        variant="outlined"
+                        sx={{
+                            margin: 0.2,
+                        }}
+                        size="small"
+                    />
+                ))}
+                </Stack>
+                
                 {description}
             </CardContent>
 
