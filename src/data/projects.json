@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "id": "star_rail_assistant",
         "title": "Star Rail Assistant",
         "tagline": "A NextJS web app that helps track gacha data for Honkai Star Rail",
         "description": "A NextJS web app that helps track gacha data for Honkai Star Rail.",
@@ -10,7 +10,7 @@
         "tech": ["NextJS", "React", "TypeScript", "TailwindCSS", "Material UI"]
     },
     {
-        "id": 2,
+        "id": "meister_eliphas",
         "title": "Meister Eliphas",
         "tagline": "Godot Strategy Portal Game for the 3rd UGJ Birthday Bash and GameDev.tv jam",
         "description": "Godot Strategy Portal Game for the 3rd UGJ Birthday Bash and GameDev.tv jam.",
