@@ -17,7 +17,6 @@ export default function Projects() {
                             <ProjectTile
                                 title={project.title}
                                 tagline={project.tagline}
-                                description={project.description}
                                 image={project.image}
                                 link={project.link}
                                 github={project.github}
