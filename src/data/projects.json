@@ -7,6 +7,6 @@
         "image": "",
         "link": "https://star-rail-assistant.vercel.app/",
         "github": "https://github.com/erik-lance/Star-Rail-Assistant",
-        "tech": ["NextJS", "React", "TypeScript", "TailwindCSS", "MongoDB", "Express", "NodeJS"]
+        "tech": ["NextJS", "React", "TypeScript", "TailwindCSS", "Material UI"]
     }
 ]
