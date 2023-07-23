@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 import type { AppProps } from 'next/app';
-import Header from '../components/Header';
+import Header from '@/components/Header';
 
 // Makes every page under pages/ use the same layout
 function MyApp({ Component, pageProps }: AppProps) {
