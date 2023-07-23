@@ -9,7 +9,7 @@ interface ProjectTileProps {
     name: string;
     tagline: string;
     description: string;
-    image: string;
+    image?: string;
     link: string;
     github: string;
     tech: string[];
