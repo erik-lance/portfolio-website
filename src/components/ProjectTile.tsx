@@ -4,6 +4,8 @@ import CardContent from '@mui/material/CardContent'
 import CardActions from '@mui/material/CardActions'
 
 import IconButton from '@mui/material/IconButton'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import LinkIcon from '@mui/icons-material/Link'
 
 interface ProjectTileProps {
     name: string;
@@ -36,8 +38,10 @@ export default function ProjectTile(
 
             <CardActions>
                 <IconButton aria-label="github" href={github}>
+                    <GitHubIcon />
                 </IconButton>
                 <IconButton aria-label="link" href={link}>
+                    <LinkIcon />
                 </IconButton>
             </CardActions>
 
