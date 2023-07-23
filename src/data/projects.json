@@ -2,11 +2,21 @@
     {
         "id": 1,
         "title": "Star Rail Assistant",
-        "tagline": "A NextJS web app that helps track gacha data for Honkai Star Rail.",
+        "tagline": "A NextJS web app that helps track gacha data for Honkai Star Rail",
         "description": "A NextJS web app that helps track gacha data for Honkai Star Rail.",
-        "image": "",
+        "image": "star_rail_assistant.png",
         "link": "https://star-rail-assistant.vercel.app/",
         "github": "https://github.com/erik-lance/Star-Rail-Assistant",
         "tech": ["NextJS", "React", "TypeScript", "TailwindCSS", "Material UI"]
+    },
+    {
+        "id": 2,
+        "title": "Meister Eliphas",
+        "tagline": "Godot Strategy Portal Game for the 3rd UGJ Birthday Bash and GameDev.tv jam",
+        "description": "Godot Strategy Portal Game for the 3rd UGJ Birthday Bash and GameDev.tv jam.",
+        "image": "",
+        "link": "https://maplepoki.itch.io/meister-eliphas",
+        "github": "https://github.com/erik-lance/Meister-Eliphas",
+        "tech": ["Godot", "GDScript"]
     }
 ]
