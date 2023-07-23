@@ -1,5 +1,6 @@
 import Card from '@mui/material/Card'
 import CardHeader from '@mui/material/CardHeader'
+import CardMedia from '@mui/material/CardMedia'
 import CardContent from '@mui/material/CardContent'
 import CardActions from '@mui/material/CardActions'
 
@@ -26,13 +27,23 @@ export default function ProjectTile(
         <Card
             sx={{
                 width: 300,
-                height: 300,
             }}
         >
             <CardHeader
                 title={name}
                 subheader={tagline}
             />
+
+            {/* If no image provided, do not render */}
+            {image && 
+            
+            <CardMedia
+                component="img"
+                height="194"
+                image={"/project_imgs/" + image}
+                alt={name}
+            />
+            }
 
             <CardContent>
                 <Stack direction="row" spacing={1}>
