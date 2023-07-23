@@ -9,12 +9,12 @@ import IconButton from '@mui/material/IconButton'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkIcon from '@mui/icons-material/Link'
 
-import { Chip, List, Stack } from '@mui/material'
+import { Chip, List } from '@mui/material'
 
 export interface ProjectTileProps {
     title: string;
     tagline: string;
-    description: string;
+    description?: string;
     image?: string;
     link: string;
     github: string;
@@ -26,7 +26,7 @@ function project_page_parse(title: string) {
 }
 
 export default function ProjectTile(
-    { title, tagline, description, image, link, github, tech }: ProjectTileProps
+    { title, tagline, image, link, github, tech }: ProjectTileProps
 ) {
     return (
         <Card
@@ -71,10 +71,10 @@ export default function ProjectTile(
                 </CardContent>
             </CardActionArea>
             <CardActions disableSpacing>
-                <IconButton aria-label="github" href={github}>
+                <IconButton aria-label="github" href={github} target="_blank">
                     <GitHubIcon />
                 </IconButton>
-                <IconButton aria-label="link" href={link}>
+                <IconButton aria-label="link" href={link} target="_blank">
                     <LinkIcon />
                 </IconButton>
             </CardActions>
