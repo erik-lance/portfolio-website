@@ -1,6 +1,8 @@
 import ProjectTile from "@/components/ProjectTile";
 import { Grid } from "@mui/material";
 
+import projects from "@/data/projects.json";
+
 export default function Projects() {
     return (
         <>
@@ -10,17 +12,19 @@ export default function Projects() {
                     container
                     spacing={2}
                 >
-                    <Grid item xs>
-                        <ProjectTile
-                            name="Test"
-                            tagline="Test"
-                            description="Test"
-                            image="Test"
-                            link="Test"
-                            github="Test"
-                            tech={["Test"]}
-                        />
-                    </Grid>
+                    {projects.map((project) => (
+                        <Grid item xs>
+                            <ProjectTile
+                                name={project.title}
+                                tagline={project.tagline}
+                                description={project.description}
+                                image={project.image}
+                                link={project.link}
+                                github={project.github}
+                                tech={project.tech}
+                            />
+                        </Grid>
+                    ))}
                 </Grid>
             </div>
         </>
