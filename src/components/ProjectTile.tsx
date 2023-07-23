@@ -29,11 +29,6 @@ export default function ProjectTile(
                 width: 300,
             }}
         >
-            <CardHeader
-                title={name}
-                subheader={tagline}
-            />
-
             {/* If no image provided, do not render */}
             {image && 
             
@@ -44,6 +39,13 @@ export default function ProjectTile(
                 alt={name}
             />
             }
+            
+            <CardHeader
+                title={name}
+                subheader={tagline}
+            />
+
+            
 
             <CardContent>
                 <Stack direction="row" spacing={1}>
