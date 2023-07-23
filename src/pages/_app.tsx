@@ -10,7 +10,7 @@ import Header from '@/components/Header';
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <div className={inter.className}>
-            <main className='flex flex-col min-h-screen justify-between'>
+            <main className='flex flex-col min-h-screen'>
                 <Header />
                 <div className="flex flex-col items-center justify-between p-24">
                     <Component {...pageProps} />
