@@ -8,7 +8,7 @@ import IconButton from '@mui/material/IconButton'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkIcon from '@mui/icons-material/Link'
 
-import { Chip, Stack } from '@mui/material'
+import { Chip, List, Stack } from '@mui/material'
 
 interface ProjectTileProps {
     name: string;
@@ -21,7 +21,7 @@ interface ProjectTileProps {
 }
 
 export default function ProjectTile(
-    {name, tagline, description, image, link, github, tech}: ProjectTileProps
+    { name, tagline, description, image, link, github, tech }: ProjectTileProps
 ) {
     return (
         <Card
@@ -30,38 +30,34 @@ export default function ProjectTile(
             }}
         >
             {/* If no image provided, do not render */}
-            {image && 
-            
-            <CardMedia
-                component="img"
-                height="194"
-                image={"/project_imgs/" + image}
-                alt={name}
-            />
+            {image &&
+
+                <CardMedia
+                    component="img"
+                    height="194"
+                    image={"/project_imgs/" + image}
+                    alt={name}
+                />
             }
-            
+
             <CardHeader
                 title={name}
                 subheader={tagline}
             />
 
-            
-
             <CardContent>
-                <Stack direction="row" spacing={1}>
-                {tech.map((tech) => (
-                    <Chip 
-                        label={tech} 
-                        variant="outlined"
-                        sx={{
-                            margin: 0.2,
-                        }}
-                        size="small"
-                    />
-                ))}
-                </Stack>
-                
-                {description}
+                <List>
+                        {tech.map((tech) => (
+                            <Chip
+                                label={tech}
+                                variant="outlined"
+                                sx={{
+                                    margin: 0.2,
+                                }}
+                                size="small"
+                            />
+                        ))}
+                </List>
             </CardContent>
 
             <CardActions disableSpacing>
