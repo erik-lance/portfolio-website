@@ -3,6 +3,7 @@ import CardHeader from '@mui/material/CardHeader'
 import CardMedia from '@mui/material/CardMedia'
 import CardContent from '@mui/material/CardContent'
 import CardActions from '@mui/material/CardActions'
+import CardActionArea from '@mui/material/CardActionArea'
 
 import IconButton from '@mui/material/IconButton'
 import GitHubIcon from '@mui/icons-material/GitHub'
@@ -10,8 +11,8 @@ import LinkIcon from '@mui/icons-material/Link'
 
 import { Chip, List, Stack } from '@mui/material'
 
-interface ProjectTileProps {
-    name: string;
+export interface ProjectTileProps {
+    title: string;
     tagline: string;
     description: string;
     image?: string;
@@ -20,8 +21,12 @@ interface ProjectTileProps {
     tech: string[];
 }
 
+function project_page_parse(title: string) {
+    return title.toLowerCase().replace(/ /g, "_");
+}
+
 export default function ProjectTile(
-    { name, tagline, description, image, link, github, tech }: ProjectTileProps
+    { title, tagline, description, image, link, github, tech }: ProjectTileProps
 ) {
     return (
         <Card
@@ -29,24 +34,29 @@ export default function ProjectTile(
                 width: 300,
             }}
         >
-            {/* If no image provided, do not render */}
-            {image &&
+            {/* Clicking on the card's action area leads to its page */}
+            <CardActionArea
+                href={"/p/"+project_page_parse(title)}
+                target="_blank"
+            >
+                {/* If no image provided, do not render */}
+                {image &&
 
-                <CardMedia
-                    component="img"
-                    height="194"
-                    image={"/project_imgs/" + image}
-                    alt={name}
+                    <CardMedia
+                        component="img"
+                        height="194"
+                        image={"/project_imgs/" + image}
+                        alt={title}
+                    />
+                }
+
+                <CardHeader
+                    title={title}
+                    subheader={tagline}
                 />
-            }
 
-            <CardHeader
-                title={name}
-                subheader={tagline}
-            />
-
-            <CardContent>
-                <List>
+                <CardContent>
+                    <List>
                         {tech.map((tech) => (
                             <Chip
                                 label={tech}
@@ -57,9 +67,9 @@ export default function ProjectTile(
                                 size="small"
                             />
                         ))}
-                </List>
-            </CardContent>
-
+                    </List>
+                </CardContent>
+            </CardActionArea>
             <CardActions disableSpacing>
                 <IconButton aria-label="github" href={github}>
                     <GitHubIcon />

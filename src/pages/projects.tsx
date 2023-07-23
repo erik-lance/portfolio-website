@@ -15,7 +15,7 @@ export default function Projects() {
                     {projects.map((project) => (
                         <Grid item xs>
                             <ProjectTile
-                                name={project.title}
+                                title={project.title}
                                 tagline={project.tagline}
                                 description={project.description}
                                 image={project.image}
