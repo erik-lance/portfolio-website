@@ -36,7 +36,7 @@ export default function ProjectTile(
                 {description}
             </CardContent>
 
-            <CardActions>
+            <CardActions disableSpacing>
                 <IconButton aria-label="github" href={github}>
                     <GitHubIcon />
                 </IconButton>
