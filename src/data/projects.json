@@ -10,6 +10,16 @@
         "tech": ["NextJS", "React", "TypeScript", "TailwindCSS", "Material UI"]
     },
     {
+        "id": "transaction_management",
+        "title": "Transaction Management System",
+        "tagline": "Distributed database with 3 web app Azure servers with MySQL",
+        "description": "Distributed database with 3 web app Azure servers with MySQL.",
+        "image": "",
+        "link": "",
+        "github": "https://github.com/erik-lance/Transaction-Management",
+        "tech": ["Azure", "MySQL", "NodeJS", "Apache Web Server"]
+    },
+    {
         "id": "meister_eliphas",
         "title": "Meister Eliphas",
         "tagline": "Godot Strategy Portal Game for the 3rd UGJ Birthday Bash and GameDev.tv jam",
@@ -18,5 +28,15 @@
         "link": "https://maplepoki.itch.io/meister-eliphas",
         "github": "https://github.com/erik-lance/Meister-Eliphas",
         "tech": ["Godot", "GDScript"]
+    },
+    {
+        "id": "message_board_system",
+        "title": "Message Board System",
+        "tagline": "UDP Client-server MBS made in Python. Made for Network class",
+        "description": "UDP Client-server MBS made in Python. Made for Network class.",
+        "image": "",
+        "link": "",
+        "github": "https://github.com/erik-lance/CSNETWK-Message-Board-System",
+        "tech": ["Python"]
     }
 ]
