@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import projects from '@/data/projects.json';
 import { ProjectTileProps } from '@/components/ProjectTile';
+import { Paper, Stack } from '@mui/material';
 
 export default function Project() {
     const router = useRouter();
@@ -40,20 +41,35 @@ export default function Project() {
 
     return (
         <>
-            <h1 className="text-6xl font-bold text-center">Project</h1>
-            <div>
+            <div
+                className="flex flex-col gap-10"
+            >
                 {isLoading ? (
                     <h1>Loading...</h1>
                 ) : !projectData ? (
                     <h1>Project not found.</h1>
-                ) : (
-                    
-                    <div>
-                        <h1>{projectData.title}</h1>
-                        <h2>{projectData.tagline}</h2>
-                        <p>{projectData.description}</p>
+                ) : (<>
+
+                    <div className="flex flex-row items-center justify-center py-2 gap-5">
+                        <Paper
+                            elevation={5}
+                        >
+                            <img
+                                src={"/project_imgs/" + projectData.image} alt={projectData.title}
+                                className="max-h-72"
+                            />
+                        </Paper>
+
+
+                        <Stack spacing={2}>
+                            <h1 className="text-6xl font-bold">{projectData.title}</h1>
+                            <h2>{projectData.tagline}</h2>
+                        </Stack>
+
                     </div>
-                )}
+
+                    <p>{projectData.description}</p>
+                </>)}
             </div>
         </>
     );
