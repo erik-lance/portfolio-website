@@ -10,7 +10,7 @@
         "tech": ["NextJS", "React", "TypeScript", "TailwindCSS", "Material UI"]
     },
     {
-        "id": "transaction_management",
+        "id": "transaction_management_system",
         "title": "Transaction Management System",
         "tagline": "Distributed database with 3 web app Azure servers with MySQL",
         "description": "Distributed database with 3 web app Azure servers with MySQL.",
@@ -40,8 +40,8 @@
         "tech": ["Python"]
     },
     {
-        "id": "grocery_shopping_abm_model",
-        "title": "Grocery Shopping ABM Model",
+        "id": "grocery_shopping_model",
+        "title": "Grocery Shopping Model",
         "tagline": "A NetLogo simulation of a grocery store that shows traffic and sales in a grocery store.",
         "description": "A NetLogo Agent-Based Modeling simulation of a grocery store that shows traffic and sales in a grocery store.",
         "image": "",
