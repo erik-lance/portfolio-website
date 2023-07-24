@@ -14,7 +14,7 @@
         "title": "Transaction Management System",
         "tagline": "Distributed database with 3 web app Azure servers with MySQL",
         "description": "Distributed database with 3 web app Azure servers with MySQL.",
-        "image": "",
+        "image": "transaction_management.png",
         "link": "",
         "github": "https://github.com/erik-lance/Transaction-Management",
         "tech": ["Azure", "MySQL", "NodeJS", "Apache Web Server"]
@@ -38,5 +38,15 @@
         "link": "",
         "github": "https://github.com/erik-lance/CSNETWK-Message-Board-System",
         "tech": ["Python"]
+    },
+    {
+        "id": "grocery_shopping_abm_model",
+        "title": "Grocery Shopping ABM Model",
+        "tagline": "A NetLogo simulation of a grocery store that shows traffic and sales in a grocery store.",
+        "description": "A NetLogo Agent-Based Modeling simulation of a grocery store that shows traffic and sales in a grocery store.",
+        "image": "",
+        "link": "",
+        "github": "https://github.com/erik-lance/Grocery-Shopping-ABM-Model",
+        "tech": ["NetLogo"]
     }
 ]
