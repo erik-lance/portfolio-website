@@ -32,6 +32,7 @@ export default function ProjectTile(
         <Card
             sx={{
                 width: 300,
+                maxHeight: 400,
             }}
         >
             {/* Clicking on the card's action area leads to its page */}
@@ -44,9 +45,12 @@ export default function ProjectTile(
 
                     <CardMedia
                         component="img"
-                        height="194"
                         image={"/project_imgs/" + image}
                         alt={title}
+                        sx={{
+                            maxHeight: 200,
+                            boxShadow: 3,
+                        }}
                     />
                 }
 
