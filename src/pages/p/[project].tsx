@@ -2,7 +2,10 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import projects from '@/data/projects.json';
 import { ProjectTileProps } from '@/components/ProjectTile';
-import { Paper, Stack } from '@mui/material';
+import { IconButton, Paper, Stack } from '@mui/material';
+
+import GithubIcon from '@mui/icons-material/GitHub';
+import LinkIcon from '@mui/icons-material/Link';
 
 export default function Project() {
     const router = useRouter();
@@ -69,6 +72,34 @@ export default function Project() {
                     </div>
 
                     <p>{projectData.description}</p>
+
+                    {/* This contains the links of the project */}
+                    <div
+                        className="flex flex-row gap-5 justify-end"
+                    >
+                        {projectData.github &&
+                            <IconButton
+                                href={projectData.github}
+                                target="_blank"
+                                className="flex-grow"
+                                color='primary'
+                            >
+                                <GithubIcon />
+                            </IconButton>}
+
+
+                        {projectData.link &&
+                            <IconButton
+                                href={projectData.link}
+                                target="_blank"
+                                className="flex-grow"
+                                color='primary'
+                            >
+                                <LinkIcon />
+                            </IconButton>
+                        }
+                    </div>
+
                 </>)}
             </div>
         </>
