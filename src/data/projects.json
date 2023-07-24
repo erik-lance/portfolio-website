@@ -3,7 +3,7 @@
         "id": "star_rail_assistant",
         "title": "Star Rail Assistant",
         "tagline": "A NextJS web app that helps track gacha data for Honkai Star Rail",
-        "description": "A NextJS web app that helps track gacha data for Honkai Star Rail.",
+        "description": "This web app fetches from the undocumented API of Hoyoverse's Honkai Star Rail. It reads data from the API and displays it in a more readable format. It's a work in progress and I'm still adding more features to it. It helped me learn how to write a NextJS app and use Material UI for the interfaces.",
         "image": "star_rail_assistant.png",
         "link": "https://star-rail-assistant.vercel.app/",
         "github": "https://github.com/erik-lance/Star-Rail-Assistant",
