@@ -59,6 +59,7 @@ export default function ProjectTile(
                     <List>
                         {tech.map((tech) => (
                             <Chip
+                                key={tech}
                                 label={tech}
                                 variant="outlined"
                                 sx={{
