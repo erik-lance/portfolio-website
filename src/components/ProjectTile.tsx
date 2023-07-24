@@ -33,6 +33,7 @@ export default function ProjectTile(
             sx={{
                 width: 300,
                 maxHeight: 400,
+                height: "100%",
             }}
         >
             {/* Clicking on the card's action area leads to its page */}
@@ -48,7 +49,7 @@ export default function ProjectTile(
                         image={"/project_imgs/" + image}
                         alt={title}
                         sx={{
-                            maxHeight: 200,
+                            maxHeight: 138,
                             boxShadow: 3,
                         }}
                     />
@@ -57,9 +58,18 @@ export default function ProjectTile(
                 <CardHeader
                     title={title}
                     subheader={tagline}
+                    sx={{
+                        paddingBottom: 0,
+                    }}
                 />
 
-                <CardContent>
+                <CardContent
+                    sx={{
+                        paddingY: 0.5,
+                        maxHeight: 170,
+                        overflow: "auto"
+                    }}
+                >
                     <List>
                         {tech.map((tech) => (
                             <Chip
