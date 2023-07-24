@@ -36,7 +36,7 @@ export default function ProjectTile(
         >
             {/* Clicking on the card's action area leads to its page */}
             <CardActionArea
-                href={"/p/"+project_page_parse(title)}
+                href={"/p/" + project_page_parse(title)}
                 target="_blank"
             >
                 {/* If no image provided, do not render */}
@@ -71,12 +71,17 @@ export default function ProjectTile(
                 </CardContent>
             </CardActionArea>
             <CardActions disableSpacing>
-                <IconButton aria-label="github" href={github} target="_blank">
+
+                {/* If there is a git link then add git button */}
+                {github && <IconButton aria-label="github" href={github} target="_blank">
                     <GitHubIcon />
-                </IconButton>
-                <IconButton aria-label="link" href={link} target="_blank">
+                </IconButton>}
+
+                {/* If there is a link then add link button*/}
+                {link && <IconButton aria-label="link" href={link} target="_blank">
                     <LinkIcon />
-                </IconButton>
+                </IconButton>}
+
             </CardActions>
 
         </Card>
