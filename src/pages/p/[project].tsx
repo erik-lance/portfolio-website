@@ -7,6 +7,8 @@ import { IconButton, Paper, Stack, Typography } from '@mui/material';
 import GithubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
 
+import Image from 'next/image';
+
 export default function Project() {
     const router = useRouter();
     const { project } = router.query;
@@ -57,7 +59,7 @@ export default function Project() {
                         <Paper
                             elevation={5}
                         >
-                            <img
+                            <Image
                                 src={"/project_imgs/" + projectData.image} alt={projectData.title}
                                 className="max-h-72"
                             />
