@@ -18,7 +18,12 @@ const theme = createTheme({
             primary: "#FFFFFF",
             secondary: "#E6DECA",
             disabled: "#606060",
-        }
+        },
+        background: {
+            default: "#BFDC8C",
+            paper: "#EAF3D9",
+
+        },
         
     },
     typography: {

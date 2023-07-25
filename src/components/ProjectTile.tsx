@@ -35,6 +35,7 @@ export default function ProjectTile(
                 maxHeight: 400,
                 height: "100%",
                 boxShadow: 5,
+                bgcolor: "secondary.main"
             }}
         >
             {/* Clicking on the card's action area leads to its page */}
