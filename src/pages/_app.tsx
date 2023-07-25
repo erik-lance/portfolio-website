@@ -1,7 +1,8 @@
 import '@/styles/globals.css'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import { Lexend } from 'next/font/google';
+
+const lexend = Lexend({ subsets: ['latin'] })
 
 import type { AppProps } from 'next/app';
 import Header from '@/components/Header';
@@ -12,7 +13,7 @@ import theme from '@/styles/theme';
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <ThemeProvider theme={theme} >
-        <div className={inter.className}>
+        <div className={lexend.className}>
             <main className='flex flex-col min-h-screen'>
                 <Header />
                 <div className="flex flex-col items-center justify-between p-24">

@@ -1,7 +1,8 @@
 import '@/styles/globals.css'
-import { Inter } from 'next/font/google'
+import { Lexend } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const lexend = Lexend({ subsets: ['latin'] })
+
 
 export const metadata = {
   title: 'Portfolio Website',
@@ -15,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={lexend.className}>{children}</body>
     </html>
   )
 }
