@@ -1,9 +1,16 @@
+import { Typography } from "@mui/material";
+
 export default function Hero() {
     return (
         <div className="flex flex-col items-center justify-center">
-            <h1 className="text-6xl font-bold text-center text-white">
-                My name is Erik Lance Tiongquico.
-            </h1>
+            <Typography
+                variant="h1"
+                component="h1"
+                fontWeight={700}
+                color="primary.main"
+            >
+                Hello, I'm Erik.
+            </Typography>
         </div>
     );
 }
