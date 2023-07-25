@@ -34,6 +34,7 @@ export default function ProjectTile(
                 width: 300,
                 maxHeight: 400,
                 height: "100%",
+                boxShadow: 5,
             }}
         >
             {/* Clicking on the card's action area leads to its page */}
@@ -51,6 +52,7 @@ export default function ProjectTile(
                         sx={{
                             maxHeight: 138,
                             boxShadow: 3,
+                            objectFit: "bottom"
                         }}
                     />
                 }
