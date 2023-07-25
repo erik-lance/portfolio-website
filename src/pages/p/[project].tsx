@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import projects from '@/data/projects.json';
 import { ProjectTileProps } from '@/components/ProjectTile';
-import { IconButton, Paper, Stack } from '@mui/material';
+import { IconButton, Paper, Stack, Typography } from '@mui/material';
 
 import GithubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
@@ -65,13 +65,31 @@ export default function Project() {
 
 
                         <Stack spacing={2}>
-                            <h1 className="text-6xl font-bold">{projectData.title}</h1>
-                            <h2>{projectData.tagline}</h2>
+                            <Typography
+                                variant="h2"
+                                color="primary.light"
+                                fontWeight={700}
+                            >
+                                {projectData.title}
+                            </Typography>
+
+                            <Typography
+                                variant="h5"
+                                color="text.secondary"
+                                fontWeight={500}
+                            >
+                                {projectData.tagline}
+                            </Typography>
                         </Stack>
 
                     </div>
 
-                    <p>{projectData.description}</p>
+                    <Typography
+                        variant="body1"
+                        color="text.primary"
+                    >
+                        {projectData.description}
+                    </Typography>
 
                     {/* This contains the links of the project */}
                     <div
