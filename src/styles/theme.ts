@@ -10,13 +10,20 @@ const theme = createTheme({
             dark: '#1F3736'
         },
         secondary: {
-            light: '#523B40',
-            main: '#3D253B',
+            light: '#ECE9EB',
+            main: '#776676',
+            dark: '#3D253B'
         },
+        text: {
+            primary: "#FFFFFF",
+            secondary: "#E6DECA",
+            disabled: "#606060",
+        }
         
     },
     typography: {
         fontFamily: 'Lexend, sans-serif',
+        
 
     }
 });
