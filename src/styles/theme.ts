@@ -1,4 +1,6 @@
 import { createTheme } from '@mui/material/styles';
+import '@fontsource/lexend';
+
 
 const theme = createTheme({
     palette: {
@@ -12,6 +14,10 @@ const theme = createTheme({
             main: '#3D253B',
         },
         
+    },
+    typography: {
+        fontFamily: 'Lexend, sans-serif',
+
     }
 });
 
