@@ -1,4 +1,7 @@
+'use client'
 import '@/styles/globals.css'
+import theme from '@/styles/theme'
+import { ThemeProvider } from '@emotion/react'
 import { Lexend } from 'next/font/google'
 
 const lexend = Lexend({ subsets: ['latin'] })
@@ -16,7 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={lexend.className}>{children}</body>
+      <body className={lexend.className}>
+        <ThemeProvider theme={theme}>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
