@@ -16,7 +16,6 @@
         "company": "DLSU Microsoft Student Community",
         "location": "Manila, Philippines",
         "start_date": "September 2022",
-        "end_date": "Present",
         "description": "Organized events and workshops for the DLSU community to learn about Microsoft technologies.",
         "skills": ["Microsoft Azure", "Microsoft Learn", "Public Speaking", "Leadership"],
         "link": "https://facebook.com/DLSUMSC"
@@ -27,7 +26,6 @@
         "company": "DLSU - Center for Empathetic Human Computer-Interactions",
         "location": "Manila, Philippines",
         "start_date": "March 2022",
-        "end_date": "Present",
         "description": "Conducted research on Computational Commensality; Co-authored CeHCI papers and assisted with experiments and data collection.",
         "skills": ["Research", "HCI"],
         "link": "https://www.dlsu.edu.ph/research/research-centers/adric/cehci/"
