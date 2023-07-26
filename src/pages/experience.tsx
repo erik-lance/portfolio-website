@@ -1,4 +1,4 @@
-import { IconButton, List, ListItem, ListItemSecondaryAction, ListItemText, ListSubheader, Stack, Typography } from "@mui/material";
+import { IconButton, List, ListItem, ListItemSecondaryAction, ListItemText, ListSubheader, Stack, Typography, Chip } from "@mui/material";
 import experience from "@/data/experience.json";
 import BusinessIcon from '@mui/icons-material/Business';
 
@@ -45,6 +45,22 @@ export default function Experience() {
                                 primary={job.position}
                                 secondary={job.company}
                             />
+                            <Stack
+                                direction="row"
+                                spacing={1}
+                            >
+                                {job.skills.map((skill) => (
+                                    <Chip
+                                        key={skill}
+                                        label={skill}
+                                        color="secondary"
+                                        variant="outlined"
+                                        size="small"
+                                    >
+                                        {skill}
+                                    </Chip>
+                                ))}
+                            </Stack>
                         </Stack>
                     </ListItem>
                 ))}
