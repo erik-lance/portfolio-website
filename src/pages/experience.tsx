@@ -46,6 +46,12 @@ export default function Experience() {
                             <ListItemText
                                 primary={job.position}
                                 secondary={job.company}
+                                primaryTypographyProps={{
+                                    color: "text.secondary",
+                                }}
+                                secondaryTypographyProps={{
+                                    color: "text.primary",
+                                }}
                             />
                             <Stack
                                 direction="row"
