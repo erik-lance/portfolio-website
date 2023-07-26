@@ -51,16 +51,14 @@ export default function Experience() {
                                 direction="row"
                                 spacing={1}
                             >
-                                {job.skills.map((skill) => (
+                                {job.skills.map((skill: string) => (
                                     <Chip
                                         key={skill}
                                         label={skill}
                                         color="primary"
                                         variant="outlined"
                                         size="small"
-                                    >
-                                        {skill}
-                                    </Chip>
+                                    />
                                 ))}
                             </Stack>
                         </Stack>
