@@ -37,7 +37,7 @@ export default function Experience() {
                             <Typography
                                 variant="subtitle1"
                                 fontWeight={700}
-                                color={job.end_date ? "text.primary" : "primary.light"}
+                                color={job.end_date ? "background.paper" : "primary.light"}
                             >
                                 {job.start_date} - {job.end_date ? job.end_date : "Present"}
                             </Typography>
