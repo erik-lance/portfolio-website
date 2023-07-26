@@ -1,4 +1,4 @@
-import { IconButton, List, ListItem, ListItemSecondaryAction, ListItemText, Stack, Typography } from "@mui/material";
+import { IconButton, List, ListItem, ListItemSecondaryAction, ListItemText, ListSubheader, Stack, Typography } from "@mui/material";
 import experience from "@/data/experience.json";
 import BusinessIcon from '@mui/icons-material/Business';
 
@@ -29,11 +29,23 @@ export default function Experience() {
                                 <BusinessIcon />
                             </IconButton>
                         }
+
                     >
-                        <ListItemText
-                            primary={job.position}
-                            secondary={job.company}
-                        />
+                        <Stack
+                            spacing={0}
+                        >
+                            <Typography
+                                variant="subtitle1"
+                                fontWeight={700}
+                                color={job.end_date ? "text.primary" : "primary.light"}
+                            >
+                                {job.start_date} - {job.end_date ? job.end_date : "Present"}
+                            </Typography>
+                            <ListItemText
+                                primary={job.position}
+                                secondary={job.company}
+                            />
+                        </Stack>
                     </ListItem>
                 ))}
             </List>
