@@ -10,6 +10,7 @@ export default function Experience() {
             <Typography
                 variant="h1"
                 fontWeight={700}
+                color="primary.light"
             >
                 Experience
             </Typography>
@@ -37,7 +38,8 @@ export default function Experience() {
                             <Typography
                                 variant="subtitle1"
                                 fontWeight={700}
-                                color={job.end_date ? "background.paper" : "primary.light"}
+                                // color={job.end_date ? "background.paper" : "primary.light"}
+                                color={"text.secondary"}
                             >
                                 {job.start_date} - {job.end_date ? job.end_date : "Present"}
                             </Typography>
@@ -53,7 +55,7 @@ export default function Experience() {
                                     <Chip
                                         key={skill}
                                         label={skill}
-                                        color="secondary"
+                                        color="primary"
                                         variant="outlined"
                                         size="small"
                                     >
