@@ -7,6 +7,7 @@ export default function Header() {
                 <a href='experience'>Experience</a>
                 <a href='projects'>Projects</a>
                 <a href='certifications'>Certifications</a>
+                <a href='events'>Events</a>
                 <a href='contact'>Contact</a>
                 <a href='resume'>Resume</a>
             </div>
