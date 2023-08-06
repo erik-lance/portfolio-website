@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "school": "De La Salle University - Manila",
+        "degree": "Bachelor of Science in Computer Science Major in Software Technology",
+        "year": "2020 - Present",
+        "gpa": 3.4,
+        "notable": "Dean's Lister"
+    },
+    {
+        "id": 2,
+        "school": "Lourdes School of Mandaluyong",
+        "degree": "Gr. 1 - Gr. 12",
+        "year": "2009 - 2020",
+        "notable": "With Honors"
+    }
+]
