@@ -1,4 +1,4 @@
-import { Container, Stack, Typography } from "@mui/material";
+import { Container, Stack, Typography, List } from "@mui/material";
 
 export default function Education() {
     return (
@@ -15,6 +15,15 @@ export default function Education() {
                 >
                     Education
                 </Typography>
+
+                <List
+                    sx={{
+                        width: '100%',
+                    }}
+                >
+
+                </List>
+                
             </Stack>
 
         </Container>
