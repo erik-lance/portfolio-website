@@ -14,16 +14,27 @@ export default function Events() {
                     Events
                 </Typography>
 
-                <Grid>
+                <Grid
+                    container
+                    spacing={2}
+
+                >
                     {events.map((event) => (
                         <Card
                             key={event.id}
                             sx={{
                                 backgroundColor: "secondary.main",
+                                boxShadow: 5,
+                                width: 300,
+                                height: 300,
                             }}
                         >
                             <CardActionArea
                                 href={event.link}
+                                target="_blank"
+                                sx={{
+                                    height: "100%",
+                                }}
                             >
                                 <CardHeader
                                     title={event.name}
@@ -31,6 +42,10 @@ export default function Events() {
                                 />
 
                                 <CardContent>
+                                    <Typography>
+                                        {/* Shortens description to 100 characters with a ... */}
+                                        {event.description.length > 100 ? event.description.substring(0, 100) + "..." : event.description}
+                                    </Typography>
                                     <List>
                                         {event.tech.map((tech) => (
                                             <Chip
