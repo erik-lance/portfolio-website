@@ -1,4 +1,4 @@
-import { Card, CardActionArea, CardContent, CardHeader, Chip, Container, Grid, List, Stack, Typography } from "@mui/material";
+import { Card, CardActionArea, CardContent, CardHeader, CardMedia, Chip, Container, Grid, List, Stack, Typography } from "@mui/material";
 import events from "@/data/events.json";
 
 
@@ -26,7 +26,7 @@ export default function Events() {
                                 backgroundColor: "secondary.main",
                                 boxShadow: 5,
                                 width: 300,
-                                height: 300,
+                                height: 400,
                             }}
                         >
                             <CardActionArea
@@ -36,12 +36,32 @@ export default function Events() {
                                     height: "100%",
                                 }}
                             >
+                                {event.image && (
+                                    <CardMedia
+                                        component="img"
+                                        image={"/event_imgs/" + event.image}
+                                        alt={event.name}
+                                        sx={{
+                                            maxHeight: 138,
+                                            boxShadow: 3,
+                                            objectFit: "bottom"
+                                        }}
+                                    />
+                                )}
+
                                 <CardHeader
                                     title={event.name}
                                     subheader={event.date}
+                                    sx={{
+                                        paddingBottom: 0,
+                                    }}
                                 />
 
-                                <CardContent>
+                                <CardContent
+                                    sx={{
+                                        paddingY: 0.5,
+                                    }}
+                                >
                                     <Typography>
                                         {/* Shortens description to 100 characters with a ... */}
                                         {event.description.length > 100 ? event.description.substring(0, 100) + "..." : event.description}
