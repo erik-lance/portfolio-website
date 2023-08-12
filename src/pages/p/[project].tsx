@@ -2,12 +2,10 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import projects from '@/data/projects.json';
 import { ProjectTileProps } from '@/components/ProjectTile';
-import { IconButton, Paper, Stack, Typography } from '@mui/material';
+import { IconButton, Paper, Stack, Typography, Container, Box, Image } from '@mui/material';
 
 import GithubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
-
-import Image from 'next/image';
 
 export default function Project() {
     const router = useRouter();
@@ -59,10 +57,15 @@ export default function Project() {
                         <Paper
                             elevation={5}
                         >
-                            <Image
-                                src={"/project_imgs/" + projectData.image} alt={projectData.title}
-                                className="max-h-72"
-                            />
+                            <Box
+                                maxWidth="md"
+                                maxHeight="md"
+                            >
+                                <Box 
+                                    component="img"
+                                    src={"/project_imgs/" + projectData.image} alt={projectData.title}
+                                />
+                            </Box>
                         </Paper>
 
 
