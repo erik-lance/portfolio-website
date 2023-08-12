@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "name": "Google I/O Extended 2023 Manila",
+        "description": "Google I/O Extended 2023 Manila",
+        "location": "Manila, Philippines",
+        "date": "2023-08-12",
+        "tech": ["Flask", "GCP", "Flutter"],
+        "image": "",
+        "certificate": "",
+        "link": ""
+    }
+]
