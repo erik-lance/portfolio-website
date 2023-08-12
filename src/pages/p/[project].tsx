@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import projects from '@/data/projects.json';
 import { ProjectTileProps } from '@/components/ProjectTile';
-import { IconButton, Paper, Stack, Typography, Container, Box, Image } from '@mui/material';
+import { IconButton, Paper, Stack, Typography, Container, Box, Image, Chip } from '@mui/material';
 
 import GithubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
@@ -85,6 +85,17 @@ export default function Project() {
                             >
                                 {projectData.tagline}
                             </Typography>
+
+                            <Stack spacing={2} direction="row">
+                                {projectData.tech.map((tech, index) => (
+                                    <Chip
+                                        key={index}
+                                        label={tech}
+                                        variant="outlined"
+                                    />
+                                ))}
+                            </Stack>
+
                         </Stack>
 
                     </div>
