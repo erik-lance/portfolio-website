@@ -9,5 +9,18 @@
         "image": "",
         "certificate": "",
         "link": "https://gdg.community.dev/events/details/google-gdg-cloud-manila-presents-google-io-extended-2023-gdg-cloud-manila/"
+    },
+    {
+        "id": 2,
+        "name": "Azure Open Source Day",
+        "description": "Azure Open Source Day",
+        "location": "Makati, Philippines",
+        "date": "2023-03-29",
+        "tech": ["Azure"],
+        "image": "",
+        "certificate": "",
+        "link": "https://msevents.microsoft.com/event?id=1501005215",
+        "extra": "Volunteered as an MLSA"
+
     }
 ]
