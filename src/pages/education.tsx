@@ -27,16 +27,45 @@ export default function Education() {
                         <ListItem
                             key={school.id}
                             secondaryAction={
-                                <IconButton edge="end" aria-label="open school page">
+                                <IconButton edge="end" aria-label="open school page"
+                                    href={school.link} target="_blank" color="primary"
+                                >
                                     <SchoolIcon />
                                 </IconButton>
                             }
                         >
+                            <Stack
+                                spacing={0}
+                            >
+                                <Typography>
+                                    {school.year}
+                                </Typography>
 
+                                <Typography
+                                    variant="h4"
+                                    fontWeight={700}
+                                    color={"text.primary"}>
+                                    {school.school}
+                                </Typography>
+
+                                <Typography
+                                    variant="subtitle1"
+                                    fontWeight={700}
+                                    color={"text.secondary"}>
+                                    {school.degree}
+                                </Typography>
+
+                                <Typography
+                                    variant="subtitle2"
+                                >
+                                    {school.notable}
+                                </Typography>
+
+                            </Stack>
                         </ListItem>
                     ))}
                 </List>
-                
+
             </Stack>
 
         </Container>
