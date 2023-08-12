@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Google I/O Extended 2023 Manila",
-        "description": "Google I/O Extended 2023 Manila",
+        "description": "GDG Cloud Manila - I/O Extended 2023 is a free, community-hosted event that will focus on the latest Google Cloud, AI, Web & Mobile updates from Google I/O. It is a great opportunity for developers to learn more about Google Cloud and how it can be used for web, mobile, IoT, AI, and more.",
         "location": "Manila, Philippines",
         "date": "2023-08-12",
         "tech": ["Flask", "GCP", "Flutter"],
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "name": "Azure Open Source Day",
-        "description": "Azure Open Source Day",
+        "description": "Learn how to use your data to build intelligent, scalable apps faster and easier. Take a deep dive into open source and Azure and see the latest open-source technology in action—while connecting with the community of industry leaders, innovators, and open-source enthusiasts.",
         "location": "Makati, Philippines",
         "date": "2023-03-29",
         "tech": ["Azure"],
