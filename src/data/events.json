@@ -22,5 +22,16 @@
         "link": "https://msevents.microsoft.com/event?id=1501005215",
         "extra": "Volunteered as an MLSA"
 
+    },
+    {
+        "id": 3,
+        "name": "What's New in Java?",
+        "description": "This is a hybrid kick-off event for the revitalization of Java User Group in the Philippines. The onsite option will be in Makati and the virtual will be in Zoom. A lunch and learn session will be held about Java which will talk about by Simon Ritter of Azul.",
+        "location": "Makati, Philippines",
+        "date": "2023-04-11",
+        "tech": ["Java"],
+        "image": "java_event.jpg",
+        "certificate": "",
+        "link": "https://www.meetup.com/java-user-group-ph/events/291909688/"
     }
 ]
