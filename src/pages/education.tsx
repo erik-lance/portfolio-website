@@ -55,6 +55,14 @@ export default function Education() {
                                     {school.degree}
                                 </Typography>
 
+                                {school.gpa && (
+                                    <Typography
+                                        variant="subtitle1"
+                                    >
+                                        GPA: {school.gpa}
+                                    </Typography>
+                                )}
+
                                 <Typography
                                     variant="subtitle2"
                                 >
