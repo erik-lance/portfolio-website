@@ -1,5 +1,6 @@
 import { Card, CardActionArea, CardContent, CardHeader, CardMedia, Chip, Container, Grid, List, Stack, Typography } from "@mui/material";
 import events from "@/data/events.json";
+import EventTile from "@/components/EventTile";
 
 
 export default function Events() {
@@ -20,65 +21,16 @@ export default function Events() {
 
                 >
                     {events.map((event) => (
-                        <Card
+                        <EventTile
                             key={event.id}
-                            sx={{
-                                backgroundColor: "secondary.main",
-                                boxShadow: 5,
-                                width: 300,
-                                height: 400,
-                            }}
-                        >
-                            <CardActionArea
-                                href={event.link}
-                                target="_blank"
-                                sx={{
-                                    height: "100%",
-                                }}
-                            >
-                                {event.image && (
-                                    <CardMedia
-                                        component="img"
-                                        image={"/event_imgs/" + event.image}
-                                        alt={event.name}
-                                        sx={{
-                                            maxHeight: 138,
-                                            boxShadow: 3,
-                                            objectFit: "bottom"
-                                        }}
-                                    />
-                                )}
-
-                                <CardHeader
-                                    title={event.name}
-                                    subheader={event.date}
-                                    sx={{
-                                        paddingBottom: 0,
-                                    }}
-                                />
-
-                                <CardContent
-                                    sx={{
-                                        paddingY: 0.5,
-                                    }}
-                                >
-                                    <Typography>
-                                        {/* Shortens description to 100 characters with a ... */}
-                                        {event.description.length > 100 ? event.description.substring(0, 100) + "..." : event.description}
-                                    </Typography>
-                                    <List>
-                                        {event.tech.map((tech) => (
-                                            <Chip
-                                                key={tech}
-                                                label={tech}
-                                                variant="outlined"
-                                                />
-                                        ))}
-                                    </List>
-                                </CardContent>
-
-                            </CardActionArea>
-                        </Card>
+                            id={event.id}
+                            name={event.name}
+                            date={event.date}
+                            image={event.image}
+                            link={event.link}
+                            description={event.description}
+                            tech={event.tech}
+                        />
                     ))}
                 </Grid>
             </Stack>
