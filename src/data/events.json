@@ -12,19 +12,6 @@
     },
     {
         "id": 2,
-        "name": "Azure Open Source Day",
-        "description": "Learn how to use your data to build intelligent, scalable apps faster and easier. Take a deep dive into open source and Azure and see the latest open-source technology in action—while connecting with the community of industry leaders, innovators, and open-source enthusiasts.",
-        "location": "Makati, Philippines",
-        "date": "2023-03-29",
-        "tech": ["Azure"],
-        "image": "azure_open_source.png",
-        "certificate": "",
-        "link": "https://msevents.microsoft.com/event?id=1501005215",
-        "extra": "Volunteered as an MLSA"
-
-    },
-    {
-        "id": 3,
         "name": "What's New in Java?",
         "description": "This is a hybrid kick-off event for the revitalization of Java User Group in the Philippines. The onsite option will be in Makati and the virtual will be in Zoom. A lunch and learn session will be held about Java which will talk about by Simon Ritter of Azul.",
         "location": "Makati, Philippines",
@@ -35,7 +22,7 @@
         "link": "https://www.meetup.com/java-user-group-ph/events/291909688/"
     },
     {
-        "id": 4,
+        "id": 3,
         "name": "Github Octernships & Career Info Session",
         "description": "GitHub Octernships program connects students with industry partners in paid professional experiences and mentorship on open source and software development projects. It is fully remote and open to students in the Philippines.",
         "location": "Mandaluyong, Philippines",
@@ -44,5 +31,18 @@
         "image": "octernship_event.jpg",
         "certificate": "",
         "link": "https://www.facebook.com/gceph/posts/pfbid0onkC2y45r1Pz7bo4WuzS2vhCfRwhivAtxtBMTd3ELz9QsCjJ17tRiaHKbwz3RxvDl?__cft__[0]=AZVgtJ2wuHhbdk1ueh6uRMnfWqq5vDYmKpmO7tqbgHXIgZKG8WFrIj6ODnU04GvcDETKL9hTTw7nj9wuecdr1g1g2abnyCtsN8jVNrzanipkgPBhWDE3k7-l8zHgM-ekowd1UV6js1eJUmVi0IKO4UjKYiaZg-ZD6TmZgegCwhKSLx5HzALllE3GT7_NhYgId7I&__tn__=%2CO%2CP-R"
+    },
+    {
+        "id": 4,
+        "name": "Azure Open Source Day",
+        "description": "Learn how to use your data to build intelligent, scalable apps faster and easier. Take a deep dive into open source and Azure and see the latest open-source technology in action—while connecting with the community of industry leaders, innovators, and open-source enthusiasts.",
+        "location": "Makati, Philippines",
+        "date": "2023-03-29",
+        "tech": ["Azure"],
+        "image": "azure_open_source.png",
+        "certificate": "",
+        "link": "https://msevents.microsoft.com/event?id=1501005215",
+        "extra": "Volunteered as an MLSA"
+
     }
 ]
