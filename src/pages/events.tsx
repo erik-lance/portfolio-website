@@ -5,7 +5,7 @@ import EventTile from "@/components/EventTile";
 
 export default function Events() {
     return (
-        <Container maxWidth="md">
+        <Container maxWidth="xl">
             <Stack spacing={2}>
                 <Typography
                     variant="h1"
@@ -21,16 +21,21 @@ export default function Events() {
 
                 >
                     {events.map((event) => (
-                        <EventTile
+                        <Grid
+                            item
+                            xs
                             key={event.id}
-                            id={event.id}
-                            name={event.name}
-                            date={event.date}
-                            image={event.image}
-                            link={event.link}
-                            description={event.description}
-                            tech={event.tech}
-                        />
+                        >
+                            <EventTile
+                                id={event.id}
+                                name={event.name}
+                                date={event.date}
+                                image={event.image}
+                                link={event.link}
+                                description={event.description}
+                                tech={event.tech}
+                            />
+                        </Grid>
                     ))}
                 </Grid>
             </Stack>
