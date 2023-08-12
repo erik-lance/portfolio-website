@@ -54,20 +54,21 @@ export default function Project() {
                 ) : (<>
 
                     <div className="flex flex-row items-center justify-center py-2 gap-5">
-                        <Paper
-                            elevation={5}
-                        >
-                            <Box
-                                maxWidth="md"
-                                maxHeight="md"
+                        {projectData.image &&
+                            <Paper
+                                elevation={5}
                             >
-                                <Box 
-                                    component="img"
-                                    src={"/project_imgs/" + projectData.image} alt={projectData.title}
-                                />
-                            </Box>
-                        </Paper>
-
+                                <Box
+                                    maxWidth="md"
+                                    maxHeight="md"
+                                >
+                                    <Box
+                                        component="img"
+                                        src={"/project_imgs/" + projectData.image} alt={projectData.title}
+                                    />
+                                </Box>
+                            </Paper>
+                        }
 
                         <Stack spacing={2}>
                             <Typography
