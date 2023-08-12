@@ -1,4 +1,5 @@
-import { Container, Stack, Typography } from "@mui/material";
+import { Card, CardActionArea, CardContent, CardHeader, Chip, Container, Grid, List, Stack, Typography } from "@mui/material";
+import events from "@/data/events.json";
 
 
 export default function Events() {
@@ -13,7 +14,38 @@ export default function Events() {
                     Events
                 </Typography>
 
+                <Grid>
+                    {events.map((event) => (
+                        <Card
+                            key={event.id}
+                            sx={{
+                                backgroundColor: "secondary.main",
+                            }}
+                        >
+                            <CardActionArea
+                                href={event.link}
+                            >
+                                <CardHeader
+                                    title={event.name}
+                                    subheader={event.date}
+                                />
 
+                                <CardContent>
+                                    <List>
+                                        {event.tech.map((tech) => (
+                                            <Chip
+                                                key={tech}
+                                                label={tech}
+                                                variant="outlined"
+                                                />
+                                        ))}
+                                    </List>
+                                </CardContent>
+
+                            </CardActionArea>
+                        </Card>
+                    ))}
+                </Grid>
             </Stack>
         </Container>
     );
