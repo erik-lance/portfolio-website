@@ -1,4 +1,5 @@
-import { Container, Paper, Stack, Typography } from "@mui/material";
+import { Container, IconButton, Link, Paper, Stack, Typography } from "@mui/material";
+import DownloadIcon from '@mui/icons-material/Download';
 
 export default function Resume() {
     return (
@@ -14,6 +15,15 @@ export default function Resume() {
                     color="primary.light"
                 >
                     Resume
+                    <IconButton
+                        aria-label="download"
+                        color="primary"
+                        component={Link}
+                        href="/documents/tiongquico_resume.pdf"
+                        download="tiongquico_resume.pdf"
+                    >
+                        <DownloadIcon />
+                    </IconButton>
                 </Typography>
 
                 <Paper 
