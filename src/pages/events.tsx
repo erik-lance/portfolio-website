@@ -1,4 +1,4 @@
-import { Card, CardActionArea, CardContent, CardHeader, CardMedia, Chip, Container, Grid, List, Stack, Typography } from "@mui/material";
+import { Container, Grid, Stack, Typography } from "@mui/material";
 import events from "@/data/events.json";
 import EventTile from "@/components/EventTile";
 
