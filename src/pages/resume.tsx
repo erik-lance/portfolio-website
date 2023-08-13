@@ -2,6 +2,7 @@ import { Container, IconButton, Link, Paper, Stack, Typography } from "@mui/mate
 import DownloadIcon from '@mui/icons-material/Download';
 
 export default function Resume() {
+    const resumePDF = "/documents/tiongquico_resume.pdf";
     return (
         <Container maxWidth="lg"
             sx={{
@@ -19,7 +20,7 @@ export default function Resume() {
                         aria-label="download"
                         color="primary"
                         component={Link}
-                        href="/documents/tiongquico_resume.pdf"
+                        href={resumePDF}
                         download="tiongquico_resume.pdf"
                     >
                         <DownloadIcon />
@@ -34,7 +35,7 @@ export default function Resume() {
                     }}
                 >
                     <iframe
-                        src="/documents/tiongquico_resume.pdf"
+                        src={resumePDF + "#toolbar=0&navpanes=0"}
                         width="100%"
                         height="100%"
                         style={{ border: "none" }}
