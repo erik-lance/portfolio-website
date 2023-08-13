@@ -1,5 +1,4 @@
 import { Container, Paper, Stack, Typography } from "@mui/material";
-import { Document } from "react-pdf";
 
 export default function Resume() {
     return (
