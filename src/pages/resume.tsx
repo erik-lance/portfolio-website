@@ -1,8 +1,26 @@
 import { Container, IconButton, Link, Paper, Stack, Typography } from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
+
 
 export default function Resume() {
     const resumePDF = "/documents/tiongquico_resume.pdf";
+
+    const handleZoomIn = () => {
+        const iframe = document.getElementById("pdf-iframe") as HTMLIFrameElement;
+        if (iframe && iframe.contentWindow) {
+            iframe.contentWindow.postMessage({ type: 'zoomIn' }, "*");
+        }
+    };
+
+    const handleZoomOut = () => {
+        const iframe = document.getElementById('pdf-iframe') as HTMLIFrameElement;
+        if (iframe && iframe.contentWindow) {
+            iframe.contentWindow.postMessage({ type: 'zoomOut' }, '*');
+        }
+    };
+
     return (
         <Container maxWidth="lg"
             sx={{
@@ -16,6 +34,23 @@ export default function Resume() {
                     color="primary.light"
                 >
                     Resume
+
+                    <IconButton
+                        aria-label="zoom-in"
+                        color="primary"
+                        onClick={handleZoomIn}
+                    >
+                        <AddIcon />
+                    </IconButton>
+
+                    <IconButton
+                        aria-label="zoom-out"
+                        color="primary"
+                        onClick={handleZoomOut}
+                    >
+                        <RemoveIcon />
+                    </IconButton>
+
                     <IconButton
                         aria-label="download"
                         color="primary"
@@ -35,7 +70,8 @@ export default function Resume() {
                     }}
                 >
                     <iframe
-                        src={resumePDF + "#toolbar=0&navpanes=0"}
+                        id="pdf-iframe"
+                        src={resumePDF + "#zoom=100"}
                         width="100%"
                         height="100%"
                         style={{ border: "none" }}
