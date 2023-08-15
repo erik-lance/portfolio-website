@@ -7,19 +7,19 @@ import RemoveIcon from '@mui/icons-material/Remove';
 export default function Resume() {
     const resumePDF = "/documents/tiongquico_resume.pdf";
 
-    const handleZoomIn = () => {
-        const iframe = document.getElementById("pdf-iframe") as HTMLIFrameElement;
-        if (iframe && iframe.contentWindow) {
-            iframe.contentWindow.postMessage({ type: 'zoomIn' }, "*");
-        }
-    };
+    // const handleZoomIn = () => {
+    //     const iframe = document.getElementById("pdf-iframe") as HTMLIFrameElement;
+    //     if (iframe && iframe.contentWindow) {
+    //         iframe.contentWindow.postMessage({ type: 'zoomIn' }, "*");
+    //     }
+    // };
 
-    const handleZoomOut = () => {
-        const iframe = document.getElementById('pdf-iframe') as HTMLIFrameElement;
-        if (iframe && iframe.contentWindow) {
-            iframe.contentWindow.postMessage({ type: 'zoomOut' }, '*');
-        }
-    };
+    // const handleZoomOut = () => {
+    //     const iframe = document.getElementById('pdf-iframe') as HTMLIFrameElement;
+    //     if (iframe && iframe.contentWindow) {
+    //         iframe.contentWindow.postMessage({ type: 'zoomOut' }, '*');
+    //     }
+    // };
 
     return (
         <Container maxWidth="lg"
@@ -35,7 +35,7 @@ export default function Resume() {
                 >
                     Resume
 
-                    <IconButton
+                    {/* <IconButton
                         aria-label="zoom-in"
                         color="primary"
                         onClick={handleZoomIn}
@@ -49,7 +49,7 @@ export default function Resume() {
                         onClick={handleZoomOut}
                     >
                         <RemoveIcon />
-                    </IconButton>
+                    </IconButton> */}
 
                     <IconButton
                         aria-label="download"
