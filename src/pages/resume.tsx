@@ -33,7 +33,7 @@ export default function Resume() {
                     fontWeight={700}
                     color="primary.light"
                 >
-                    Resume
+                    Resume (as of February 2024)
 
                     {/* <IconButton
                         aria-label="zoom-in"
