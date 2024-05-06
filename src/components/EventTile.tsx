@@ -16,19 +16,16 @@ export default function EventTile(
     return (
         <Card
             key={id}
+            elevation={0}
             sx={{
-                backgroundColor: "secondary.main",
-                boxShadow: 5,
+                backgroundColor: "transparent",
                 width: 300,
-                height: 400,
+                minHeight: 400,
             }}
         >
             <CardActionArea
                 href={link}
                 target="_blank"
-                sx={{
-                    height: "100%",
-                }}
             >
                 {image && (
                     <CardMedia
@@ -37,41 +34,44 @@ export default function EventTile(
                         alt={name}
                         sx={{
                             maxHeight: 138,
-                            boxShadow: 3,
                             objectFit: "bottom"
                         }}
                     />
                 )}
 
-                <CardHeader
-                    title={name}
-                    subheader={date}
-                    sx={{
-                        paddingBottom: 0,
-                    }}
-                />
+            </CardActionArea>
+            
+            <CardHeader
+                title={name}
+                subheader={date}
+                sx={{
+                    paddingBottom: 0,
+                }}
+            />
 
-                <CardContent
+            <CardContent>
+                <Typography>
+                    {/* Shortens description to 100 characters with a ... */}
+                    {description.length > 100 ? description.substring(0, 100) + "..." : description}
+                </Typography>
+                <List
                     sx={{
-                        paddingY: 0.5,
+                        display: "flex",
+                        flexWrap: "wrap",
+                        gap: 0.5,
                     }}
                 >
-                    <Typography>
-                        {/* Shortens description to 100 characters with a ... */}
-                        {description.length > 100 ? description.substring(0, 100) + "..." : description}
-                    </Typography>
-                    <List>
-                        {tech.map((tech) => (
-                            <Chip
-                                key={tech}
-                                label={tech}
-                                variant="outlined"
-                            />
-                        ))}
-                    </List>
-                </CardContent>
+                    {tech.map((tech) => (
+                        <Chip
+                            key={tech}
+                            label={tech}
+                            variant="outlined"
+                        />
+                    ))}
+                </List>
+            </CardContent>
 
-            </CardActionArea>
+            
         </Card>
     )
 }
