@@ -1,5 +1,15 @@
 [
     {
+        "id": "particle_simulator",
+        "title": "Particle Simulator",
+        "tagline": "Simulating particles in a 2D space with elastic collisions with distributed computing",
+        "description": "The developer server must be able to add particles to the simulation. The simulation must be able to calculate the collisions between particles and screen edges. Clients connect and move around the simulation space in a zoomed up screen and can also see each other. They can also disconnect and connect again at any time, however, only up to three (3) existing clients as a limitation. \n The server acts as a state checker that all clients will follow. Essentially, the program runs and computes on both server and client, but the client tries to refresh based on the server's current state to stay synced up with other clients and the server itself. Made with nonblocking UDP sockets.",
+        "image": "particle_sim.png",
+        "link": "",
+        "github": "https://github.com/erik-lance/Particle-Simulator-v3",
+        "tech": ["C++", "vcpkg", "SDL2", "imgui", "LWJGL", "Java"]
+    },
+    {
         "id": "star_rail_assistant",
         "title": "Star Rail Assistant",
         "tagline": "A NextJS web app that helps track gacha data for Honkai Star Rail",
@@ -8,6 +18,16 @@
         "link": "https://star-rail-assistant.vercel.app/",
         "github": "https://github.com/erik-lance/Star-Rail-Assistant",
         "tech": ["NextJS", "React", "TypeScript", "TailwindCSS", "Material UI"]
+    },
+    {
+        "id": "house_prices_analysis",
+        "title": "House Prices Analysis",
+        "tagline": "King County house condition classification analysis",
+        "description": "a project aimed at classifying houses based on their condition. The condition of a house, graded on a scale of 1 to 5, serves as our target variable. This classification task will empower us to predict and differentiate houses based on their state of repair and maintenance.",
+        "image": "house_analysis.png",
+        "link": "https://star-rail-assistant.vercel.app/",
+        "github": "https://github.com/erik-lance/Star-Rail-Assistant",
+        "tech": ["Python", "numPy", "Pandas", "Geopandas", "scikit-learn", "Seaborn"]
     },
     {
         "id": "transaction_management_system",
@@ -24,7 +44,7 @@
         "title": "Meister Eliphas",
         "tagline": "Godot Strategy Portal Game for the 3rd UGJ Birthday Bash and GameDev.tv jam",
         "description": "Godot Strategy Portal Game for the 3rd UGJ Birthday Bash and GameDev.tv jam.",
-        "image": "",
+        "image": "meister.jpg",
         "link": "https://maplepoki.itch.io/meister-eliphas",
         "github": "https://github.com/erik-lance/Meister-Eliphas",
         "tech": ["Godot", "GDScript"]
@@ -34,7 +54,7 @@
         "title": "Message Board System",
         "tagline": "UDP Client-server MBS made in Python. Made for Network class",
         "description": "UDP Client-server MBS made in Python. Made for Network class.",
-        "image": "",
+        "image": "mbs.png",
         "link": "",
         "github": "https://github.com/erik-lance/CSNETWK-Message-Board-System",
         "tech": ["Python"]
@@ -44,7 +64,7 @@
         "title": "Grocery Shopping Model",
         "tagline": "A NetLogo simulation of a grocery store that shows traffic and sales in a grocery store.",
         "description": "A NetLogo Agent-Based Modeling simulation of a grocery store that shows traffic and sales in a grocery store.",
-        "image": "",
+        "image": "grocery.png",
         "link": "",
         "github": "https://github.com/erik-lance/Grocery-Shopping-ABM-Model",
         "tech": ["NetLogo"]
