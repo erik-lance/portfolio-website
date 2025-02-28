@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen justify-between">
       <Header />
-      <div className="flex flex-col min-h-screen items-center justify-between p-24">
+      <div className="flex flex-col min-h-screen items-center justify-between p-8">
           <Hero />
       </div>
     </main>
