@@ -4,9 +4,10 @@
         "school": "De La Salle University - Manila",
         "degree": "Bachelor of Science in Computer Science Major in Software Technology",
         "year": "2020 - Present",
-        "gpa": 3.4,
-        "notable": "Dean's Lister",
-        "link": "https://www.dlsu.edu.ph/"
+        "gpa": 3.6,
+        "notable": "Magna Cum Laude, Consistent Dean's Lister, Gawad Saliksik Awardee",
+        "link": "https://www.dlsu.edu.ph/",
+        "image": "1_DLSU.png"
     },
     {
         "id": 2,
@@ -14,6 +15,7 @@
         "degree": "Gr. 1 - Gr. 12",
         "year": "2009 - 2020",
         "notable": "Salutatorian, With Honors",
-        "link": "https://lsm.edu.ph/"
+        "link": "https://lsm.edu.ph/",
+        "image": "0_LSM.jpg"
     }
 ]

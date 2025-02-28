@@ -1,4 +1,4 @@
-import { Container, Stack, Typography, List, ListItem, IconButton } from "@mui/material";
+import { Container, Stack, Typography, List, ListItem, IconButton, ListItemAvatar, Avatar } from "@mui/material";
 import SchoolIcon from '@mui/icons-material/School';
 import education from "@/data/education.json";
 
@@ -34,6 +34,16 @@ export default function Education() {
                                 </IconButton>
                             }
                         >
+                            <ListItemAvatar>
+                                <Avatar 
+                                    alt="School Logo" src={"/education_imgs/" + school.image} 
+                                    sx={{
+                                        width: 48,
+                                        height: 48,
+                                    }}
+                                />
+                            </ListItemAvatar>
+                            
                             <Stack
                                 spacing={0}
                             >
