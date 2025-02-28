@@ -10,7 +10,6 @@ export default function Header() {
                 <Link href='/projects'>Projects</Link>
                 <Link href='/certifications'>Certifications</Link>
                 <Link href='/events'>Events</Link>
-                <Link href='/contact'>Contact</Link>
                 <Link href='/resume'>Resume</Link>
             </div>
         </div>
