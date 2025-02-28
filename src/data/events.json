@@ -1,6 +1,28 @@
 [
     {
-        "id": 1,
+        "id": 6,
+        "name": "Gawad Saliksisk 2024",
+        "description": "An event in recognition of the outstanding achievements of faculty members and students in research.",
+        "location": "Manila, Philippines",
+        "date": "2025-02-05",
+        "tech": ["Research", "HCI", "AI"],
+        "image": "gawad_saliksik_2025.jpg",
+        "certificate": "",
+        "link": "https://www.facebook.com/TheLaSallian/posts/pfbid02YSfwiZvgVoeP9CCnNp5jhQd2wbqXKDwZr3dqyBNqbcQuwjUNHeZ4wh1qWmqTkSwMl"
+    },
+    {
+        "id": 5,
+        "name": "GitHub Field Day 2024 Philippines",
+        "description": "GitHub Field Day is an unconference for leaders of technical student communities. It is a one-day event that brings together student leaders from different regional communities to hang out, become friends, learn from each other's mistakes and successes, and solve shared problems.",
+        "location": "Taguig, Philippines",
+        "date": "2024-07-20",
+        "tech": ["GitHub", "AI", "Leadership"],
+        "image": "GHFD.jpg",
+        "certificate": "",
+        "link": "https://githubfieldday.com/"
+    },
+    {
+        "id": 4,
         "name": "Google I/O Extended 2023 Manila",
         "description": "GDG Cloud Manila - I/O Extended 2023 is a free, community-hosted event that will focus on the latest Google Cloud, AI, Web & Mobile updates from Google I/O. It is a great opportunity for developers to learn more about Google Cloud and how it can be used for web, mobile, IoT, AI, and more.",
         "location": "Manila, Philippines",
@@ -11,7 +33,7 @@
         "link": "https://gdg.community.dev/events/details/google-gdg-cloud-manila-presents-google-io-extended-2023-gdg-cloud-manila/"
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "What's New in Java?",
         "description": "This is a hybrid kick-off event for the revitalization of Java User Group in the Philippines. The onsite option will be in Makati and the virtual will be in Zoom. A lunch and learn session will be held about Java which will talk about by Simon Ritter of Azul.",
         "location": "Makati, Philippines",
@@ -22,7 +44,7 @@
         "link": "https://www.meetup.com/java-user-group-ph/events/291909688/"
     },
     {
-        "id": 3,
+        "id": 2,
         "name": "Github Octernships & Career Info Session",
         "description": "GitHub Octernships program connects students with industry partners in paid professional experiences and mentorship on open source and software development projects. It is fully remote and open to students in the Philippines.",
         "location": "Mandaluyong, Philippines",
@@ -33,7 +55,7 @@
         "link": "https://www.facebook.com/gceph/posts/pfbid0onkC2y45r1Pz7bo4WuzS2vhCfRwhivAtxtBMTd3ELz9QsCjJ17tRiaHKbwz3RxvDl?__cft__[0]=AZVgtJ2wuHhbdk1ueh6uRMnfWqq5vDYmKpmO7tqbgHXIgZKG8WFrIj6ODnU04GvcDETKL9hTTw7nj9wuecdr1g1g2abnyCtsN8jVNrzanipkgPBhWDE3k7-l8zHgM-ekowd1UV6js1eJUmVi0IKO4UjKYiaZg-ZD6TmZgegCwhKSLx5HzALllE3GT7_NhYgId7I&__tn__=%2CO%2CP-R"
     },
     {
-        "id": 4,
+        "id": 1,
         "name": "Azure Open Source Day",
         "description": "Learn how to use your data to build intelligent, scalable apps faster and easier. Take a deep dive into open source and Azure and see the latest open-source technology in action—while connecting with the community of industry leaders, innovators, and open-source enthusiasts.",
         "location": "Makati, Philippines",
