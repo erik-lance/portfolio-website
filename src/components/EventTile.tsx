@@ -8,11 +8,13 @@ export interface EventTileProps {
     link: string,
     description: string,
     tech: string[],
+    type: string,
 }
 
 export default function EventTile(
-    { id, name, date, image, link, description, tech }: EventTileProps
+    { id, name, date, image, link, description, tech, type }: EventTileProps
 ) {
+    const img_src: string = type === "attended" ? "/event_imgs/" : "/speaker_imgs/";
     return (
         <Card
             key={id}
@@ -30,7 +32,7 @@ export default function EventTile(
                 {image && (
                     <CardMedia
                         component="img"
-                        image={"/event_imgs/" + image}
+                        image={img_src + image}
                         alt={name}
                         sx={{
                             maxHeight: 138,

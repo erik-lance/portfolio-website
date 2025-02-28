@@ -1,0 +1,23 @@
+[
+    {
+        "id": 2,
+        "name": "Let's Make a Minecraft Server!",
+        "description": "Introduction to Azure and how to set up game servers.",
+        "location": "Philippines (Online)",
+        "date": "2023-10-18",
+        "tech": ["Azure", "Linux"],
+        "image": "minecraft.jpg",
+        "certificate": "",
+        "link": "https://www.facebook.com/DLSUMSC/posts/pfbid022kKU54MwLtYGMvCs1o7rxRwn4kgsMXYbFUddYh5JhR4z32J8rCH3ahnMppHogGxbl"
+    },
+    {
+        "id": 1,
+        "name": "SharePoint and OneDrive",
+        "description": "Organizing your files for organizations and personal use. It's a workshop which focuses on helping students learn how to better manage files as an organization and for personal use. It will discuss how organizations such as DLSU Microsoft Student Community handle their files using SharePoint and how other students simply use OneDrive for collaborating and using files and syncing them to their own personal computer. It will discuss everything that is usually missed out on in these two applications and help people use them to their fullest.",
+        "location": "Online",
+        "date": "2022-10-05",
+        "tech": ["SharePoint", "OneDrive"],
+        "image": "sharepoint.jpg",
+        "link": "https://www.facebook.com/DLSUMSC/posts/pfbid0yJTvyQqUGJw8fsCaQHsMk5EGBwzq9s2GTH7R5GC47QtraX7DiVAx3r4jpFG8Xdmjl"
+    }
+]
