@@ -12,10 +12,11 @@
 	},
     {
         "id": 2,
-        "position": "Vice President and Microsoft Learn Student Ambassador Representative",
+        "position": "President and Microsoft Learn Student Ambassador Representative",
         "company": "DLSU Microsoft Student Community",
         "location": "Manila, Philippines",
-        "start_date": "September 2022",
+        "start_date": "September 2023",
+        "end_date": "September 2024",
         "description": "Organized events and workshops for the DLSU community to learn about Microsoft technologies.",
         "skills": ["Microsoft Azure", "Microsoft Learn", "Public Speaking", "Leadership"],
         "link": "https://facebook.com/DLSUMSC"
