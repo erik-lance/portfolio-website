@@ -106,7 +106,7 @@
         "description": "When it comes to checkers, the utility function or heuristic calculation is actually simple. We use a static material evaluation to calculate the best play. It simply counts all available pieces, but kinged pieces are valued higher by 1 point. The agent's number of pieces are then subtracted to the human's number of pieces. It simply stays at zero until there's an uneven takeback of pieces.\nHowever, the chess heuristics is a different story. It is still quite similar in Checkers heuristics with material static evaluation, however, I took the liberty to look up the PeSTO evaluation which is used in RofChade. It's too complicated for me to explain, but I used their evaluation function for the sake of this project. It is not working as fully intended, but works pretty well for an AI nonetheless.",
         "image": "chess.png",
         "link": "",
-        "github": "https://github.com/erik-lance/Gold-Miner-Heuristic-Agent",
+        "github": "https://github.com/erik-lance/Checkers-Chess-AI",
         "tech": ["Java"]
     }
 ]
