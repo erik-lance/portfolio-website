@@ -68,5 +68,45 @@
         "link": "",
         "github": "https://github.com/erik-lance/Grocery-Shopping-ABM-Model",
         "tech": ["NetLogo"]
+    },
+    {
+        "id": "machine_equivalence_checker",
+        "title": "Machine Equivalence Checker",
+        "tagline": "Project in Finite State Automata that checks the equivalence of N machines.",
+        "description": "The specs are as follows:\n <NFA Name>\n|Q|\n<|Q| lines follow, each with a state name>\n|S|\n<|S| lines follow, each with a stimulus symbol>\n|δ|\n<|δ|, each with a transition of the format <src> <stimulus> <dest>>\nq_I - initial state (guaranteed to only have one)\n|F|\n<|F| lines follow, each with a final state, which is a valid member of Q from above>",
+        "image": "fsm.png",
+        "link": "",
+        "github": "https://github.com/erik-lance/STALGCM-MP",
+        "tech": ["Prolog"]
+    },
+    {
+        "id": "travel_advisor_agent",
+        "title": "Travel Advisor Agent",
+        "tagline": "A Prolog program with a knowledge base of travel advisories",
+        "description": "This was to test our knowledge of Prolog and constructing our own knowledge base based on the requirements for travel during COVID-19.",
+        "image": "travel.png",
+        "link": "",
+        "github": "https://github.com/erik-lance/travel-advisor",
+        "tech": ["Prolog"]
+    },
+    {
+        "id": "gold_miner_agent",
+        "title": "Gold Miner Agent",
+        "tagline": "A-Star algorithm pathfinding agent with self-calculated heuristics.",
+        "description": "The gist is that there's a gold block the miner must reach. The agent does not know where it is and can scan ahead of it to detect if it finds something. When it scans, it returns what that object is (Pit/Beacon/Gold) but it doesn't know where in that line it is.\nThe agent can also ONLY turn right and move forward.\nThe beacon helps return a value of where the gold is from the beacon in terms of Manhattan Distance, which makes the agent calculate a grid of squares where the gold might be.\nPits are tiles that makes the game over. The agent must avoid these tiles in order to reach the goal state.",
+        "image": "gold.png",
+        "link": "",
+        "github": "https://github.com/erik-lance/Gold-Miner-Heuristic-Agent",
+        "tech": ["Java"]
+    },
+    {
+        "id": "checkers_chess_ai",
+        "title": "Checkers Chess AI",
+        "tagline": "Play against an AI in Checkers/Chess. Uses Game Trees through Min/Max and Alpha-Beta Pruning.",
+        "description": "When it comes to checkers, the utility function or heuristic calculation is actually simple. We use a static material evaluation to calculate the best play. It simply counts all available pieces, but kinged pieces are valued higher by 1 point. The agent's number of pieces are then subtracted to the human's number of pieces. It simply stays at zero until there's an uneven takeback of pieces.\nHowever, the chess heuristics is a different story. It is still quite similar in Checkers heuristics with material static evaluation, however, I took the liberty to look up the PeSTO evaluation which is used in RofChade. It's too complicated for me to explain, but I used their evaluation function for the sake of this project. It is not working as fully intended, but works pretty well for an AI nonetheless.",
+        "image": "chess.png",
+        "link": "",
+        "github": "https://github.com/erik-lance/Gold-Miner-Heuristic-Agent",
+        "tech": ["Java"]
     }
 ]
