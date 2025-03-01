@@ -99,7 +99,8 @@ export default function Hero() {
                                     sx={{
                                         backgroundColor: "primary.dark",
                                         padding: "2px",
-                                        borderRadius: "4px"
+                                        borderRadius: "4px",
+                                        fontSize: { xs: '.6rem', sm: '.8rem', md: '1rem', lg: '1rem'},
                                     }}
                                 >
                                     {"Orange & Bronze Software Labs."}
@@ -112,7 +113,8 @@ export default function Hero() {
                                     sx={{
                                         backgroundColor: "primary.dark",
                                         padding: "2px",
-                                        borderRadius: "4px"
+                                        borderRadius: "4px",
+                                        fontSize: { xs: '.6rem', sm: '.8rem', md: '1rem', lg: '1rem'},
                                     }}
                                 >
                                     {"<100 Microsoft Learn Student Ambassadors"}
@@ -124,7 +126,8 @@ export default function Hero() {
                                     sx={{
                                         backgroundColor: "primary.dark",
                                         padding: "2px",
-                                        borderRadius: "4px"
+                                        borderRadius: "4px",
+                                        fontSize: { xs: '.6rem', sm: '.8rem', md: '1rem', lg: '1rem'},
                                     }}
                                 >
                                     {"paper on mobile applications for older adults"}
