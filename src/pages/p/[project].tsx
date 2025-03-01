@@ -105,7 +105,9 @@ export default function Project() {
                         variant="body1"
                         color="text.primary"
                     >
-                        {projectData.description}
+                        {projectData.description?.split('\n').map((line, index) => (
+                            <span key={index}>{line}<br /><br /></span>
+                        ))}
                     </Typography>
 
                     {/* This contains the links of the project */}

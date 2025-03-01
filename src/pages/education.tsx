@@ -76,7 +76,9 @@ export default function Education() {
                                 <Typography
                                     variant="subtitle2"
                                 >
-                                    {school.notable}
+                                    {school.notable.split("\n").map((line, index) => (
+                                        <span key={index}>{line}<br /></span>
+                                    ))}
                                 </Typography>
 
                             </Stack>
