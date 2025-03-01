@@ -41,7 +41,6 @@ export default function ProjectTile(
             {/* Clicking on the card's action area leads to its page */}
             <CardActionArea
                 href={"/p/" + project_page_parse(title)}
-                target="_blank"
             >
                 {/* If no image provided, do not render */}
                 {image &&
