@@ -89,10 +89,49 @@ export default function Hero() {
                                 variant="subtitle1"
                                 sx={{
                                     fontWeight: 400,
-                                    fontSize: { xs: '.6rem', sm: '.8rem', md: '1rem', lg: '1rem'}
+                                    fontSize: { xs: '.6rem', sm: '.8rem', md: '1rem', lg: '1rem'},
                                 }}
                             >
-                                I was also a former intern at Orange & Bronze Software Labs. I was previously one of the only &lt;100 Microsoft Learn Student Ambassadors in the Philippines and assisted with events Microsoft held, as well as held my own events on Azure.
+                                I was a former intern at&nbsp;
+
+                                <Typography
+                                    component="span"
+                                    sx={{
+                                        backgroundColor: "primary.dark",
+                                        padding: "2px",
+                                        borderRadius: "4px"
+                                    }}
+                                >
+                                    {"Orange & Bronze Software Labs."}
+                                </Typography>
+
+                                &nbsp;I was previously one of the only&nbsp;
+
+                                <Typography
+                                    component="span"
+                                    sx={{
+                                        backgroundColor: "primary.dark",
+                                        padding: "2px",
+                                        borderRadius: "4px"
+                                    }}
+                                >
+                                    {"<100 Microsoft Learn Student Ambassadors"}
+                                </Typography>
+
+                                &nbsp;in the Philippines and assisted with events Microsoft held, as well as held my own events on Azure. Additionally, I am the main author of a&nbsp;
+                                <Typography
+                                    component="span"
+                                    sx={{
+                                        backgroundColor: "primary.dark",
+                                        padding: "2px",
+                                        borderRadius: "4px"
+                                    }}
+                                >
+                                    {"paper on mobile applications for older adults"}
+                                </Typography>
+                                
+                                &nbsp;submitted to AsianCHI 2024.
+
                             </Typography>
                         </Box>
                         
