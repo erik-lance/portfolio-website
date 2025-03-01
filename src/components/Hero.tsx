@@ -1,3 +1,4 @@
+import { HorizontalRule } from "@mui/icons-material";
 import { Avatar, Box, Grid, Stack } from "@mui/material";
 import Typography from "@mui/material/Typography"
 
@@ -58,7 +59,7 @@ export default function Hero() {
                                 fontSize: { xs: '1.5rem', sm: '1.4rem', md: '1.6rem', lg: '2rem'}
                             }}
                         >
-                            I am a fresh graduate from De La Salle University - Manila.
+                            A Magna Cum Laude graduate from De La Salle University - Manila.
                         </Typography>
 
                         <Typography
@@ -66,11 +67,35 @@ export default function Hero() {
                             color="text.secondary"
                             sx={{
                                 fontWeight: 400,
-                                fontSize: { xs: '1rem', sm: '1rem', md: '1.2rem', lg: '1.25rem'}
+                                fontSize: { xs: '1rem', sm: '1rem', md: '1.2rem', lg: '1.25rem'},
+                                marginTop: 2
                             }}
                         >
                             I am a tech enthusiast with a knack for music and game development, but my main passion revolves entirely around technology and my exhaustive effort to study and advocate its accessibility to all users.
                         </Typography>
+
+                        <HorizontalRule />
+
+                        {/* Rounded box */}
+                        <Box
+                            sx={{
+                                bgcolor: "primary.main",
+                                borderRadius: 2,
+                                padding: 2,
+                                marginTop: 2
+                            }}
+                        >
+                            <Typography
+                                variant="subtitle1"
+                                sx={{
+                                    fontWeight: 400,
+                                    fontSize: { xs: '.6rem', sm: '.8rem', md: '1rem', lg: '1rem'}
+                                }}
+                            >
+                                I was also a former intern at Orange & Bronze Software Labs. I was previously one of the only &lt;100 Microsoft Learn Student Ambassadors in the Philippines and assisted with events Microsoft held, as well as held my own events on Azure.
+                            </Typography>
+                        </Box>
+                        
                     </Stack>
                 </Grid>
             </Grid>
