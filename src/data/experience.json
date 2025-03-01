@@ -12,6 +12,17 @@
 	},
     {
         "id": 2,
+        "position": "Beta Microsoft Learn Student Ambassador",
+        "company": "Microsoft",
+        "location": "Makati, Philippines",
+        "start_date": "November 2022",
+        "end_date": "November 2024",
+        "description": "Studied Microsoft technologies and shared my knowledge with the community. Held events and workshops. Assisted in Microsoft events.",
+        "skills": ["Microsoft Azure", "Microsoft Learn", "Public Speaking", "Leadership", "Git", "Linux", "Cloud Computing", "C#"],
+        "link": "https://learn.microsoft.com/en-us/training/"
+    },
+    {
+        "id": 3,
         "position": "President and Microsoft Learn Student Ambassador Representative",
         "company": "DLSU Microsoft Student Community",
         "location": "Manila, Philippines",
@@ -22,7 +33,7 @@
         "link": "https://facebook.com/DLSUMSC"
     },
     {
-        "id": 3,
+        "id": 4,
         "position": "Research Assistant",
         "company": "DLSU - Center for Empathetic Human Computer-Interactions",
         "location": "Manila, Philippines",
