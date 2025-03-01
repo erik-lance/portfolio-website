@@ -65,6 +65,7 @@ export default function Project() {
                                     <Box
                                         component="img"
                                         src={"/project_imgs/" + projectData.image} alt={projectData.title}
+                                        maxHeight={400}
                                     />
                                 </Box>
                             </Paper>
