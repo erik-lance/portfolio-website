@@ -22,7 +22,7 @@ export default function Projects() {
                     {projects.map((project) => (
                         <Grid 
                             item 
-                            xs
+                            xs={3} 
                             key={project.id}
                         >
                             <ProjectTile

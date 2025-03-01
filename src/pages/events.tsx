@@ -71,12 +71,12 @@ export default function Events() {
                     <Grid
                         container
                         spacing={2}
-
+                        
                     >
                         {events.map((event) => (
                             <Grid
                                 item
-                                xs
+                                xs={3} 
                                 key={event.id}
                             >
                                 <EventTile
@@ -99,12 +99,11 @@ export default function Events() {
                     <Grid
                         container
                         spacing={2}
-
                     >
                         {speaker.map((event) => (
                             <Grid
                                 item
-                                xs
+                                xs={3} 
                                 key={event.id}
                             >
                                 <EventTile
