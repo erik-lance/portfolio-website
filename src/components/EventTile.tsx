@@ -21,7 +21,6 @@ export default function EventTile(
             elevation={0}
             sx={{
                 backgroundColor: "transparent",
-                width: 300,
                 minHeight: 400,
             }}
         >

@@ -31,7 +31,6 @@ export default function ProjectTile(
     return (
         <Card
             sx={{
-                width: 300,
                 maxHeight: 400,
                 height: "100%",
                 boxShadow: 5,

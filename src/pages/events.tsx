@@ -76,7 +76,10 @@ export default function Events() {
                         {events.map((event) => (
                             <Grid
                                 item
-                                xs={3} 
+                                xs={12}
+                                sm={12}
+                                md={6}
+                                lg={3} 
                                 key={event.id}
                             >
                                 <EventTile
@@ -103,7 +106,6 @@ export default function Events() {
                         {speaker.map((event) => (
                             <Grid
                                 item
-                                xs={3} 
                                 key={event.id}
                             >
                                 <EventTile

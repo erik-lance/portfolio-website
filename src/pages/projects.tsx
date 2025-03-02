@@ -17,12 +17,16 @@ export default function Projects() {
             <div>
                 <Grid
                     container
-                    spacing={2}
+                    rowSpacing={2}
+                    columnSpacing={{ xs: 1, sm: 2, md: 3, lg: 4}}
                 >
                     {projects.map((project) => (
                         <Grid 
                             item 
-                            xs={3} 
+                            xs={12}
+                            sm={12}
+                            md={6}
+                            lg={3} 
                             key={project.id}
                         >
                             <ProjectTile
