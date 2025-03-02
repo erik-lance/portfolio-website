@@ -1,11 +1,10 @@
-import { IconButton, List, ListItem, ListItemSecondaryAction, ListItemText, ListSubheader, Stack, Typography, Chip, Container } from "@mui/material";
+import { IconButton, List, ListItem, ListItemText, Stack, Typography, Chip, Container } from "@mui/material";
 import experience from "@/data/experience.json";
 import BusinessIcon from '@mui/icons-material/Business';
 
 export default function Experience() {
     return (
         <Container
-            maxWidth="md"
         >
             <Stack
                 spacing={2}
@@ -24,6 +23,7 @@ export default function Experience() {
                     }}
                 >
                     {experience.map((job) => (
+                        <>
                         <ListItem
                             key={job.id}
                             secondaryAction={
@@ -59,6 +59,10 @@ export default function Experience() {
                                 <Stack
                                     direction="row"
                                     spacing={1}
+                                    useFlexGap
+                                    sx={{
+                                        flexWrap: 'wrap',
+                                    }}
                                 >
                                     {job.skills.map((skill: string) => (
                                         <Chip
@@ -72,6 +76,8 @@ export default function Experience() {
                                 </Stack>
                             </Stack>
                         </ListItem>
+
+                        </>
                     ))}
                 </List>
             </Stack>
