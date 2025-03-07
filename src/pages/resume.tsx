@@ -66,7 +66,7 @@ export default function Resume() {
                     variant="subtitle1"
                     color="primary.light"
                     >
-                    Click the download button to download the PDF file. My address and phone number are not included in the resume for privacy reasons. Please contact me through email for inquiries.
+                    Click the download button above (or at the top of the pdf reader) to download the PDF file. My address and phone number are not included in the resume for privacy reasons. Please contact me through email for inquiries.
                 </Typography>
 
                 <Paper 
