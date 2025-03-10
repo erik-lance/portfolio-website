@@ -1,5 +1,16 @@
 [
     {
+        "id": 7,
+        "name": "AsianCHI 2024",
+        "description": "A dynamic platform for researchers, graduate students, and industry professionals on cutting-edge developments in Human-Computer Interaction (HCI) with a particular focus on Asia.",
+        "location": "Online",
+        "date": "2024-09-19",
+        "tech": ["Research", "HCI", "AI"],
+        "image": "asianchi.png",
+        "certificate": "",
+        "link": "https://www.asianchi.net/home_1"
+    },
+    {
         "id": 6,
         "name": "Gawad Saliksisk 2024",
         "description": "An event in recognition of the outstanding achievements of faculty members and students in research.",
