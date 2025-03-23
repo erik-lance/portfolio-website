@@ -1,6 +1,17 @@
 [
     {
         "id": 7,
+        "name": "Gawad Saliksisk 2025",
+        "description": "An event in recognition of the outstanding achievements of faculty members and students in research.",
+        "location": "Manila, Philippines",
+        "date": "2025-02-05",
+        "tech": ["Research", "HCI", "AI"],
+        "image": "gawad_saliksik_2025.jpg",
+        "certificate": "",
+        "link": "https://www.facebook.com/TheLaSallian/posts/pfbid02YSfwiZvgVoeP9CCnNp5jhQd2wbqXKDwZr3dqyBNqbcQuwjUNHeZ4wh1qWmqTkSwMl"
+    },
+    {
+        "id": 6,
         "name": "AsianCHI 2024",
         "description": "A dynamic platform for researchers, graduate students, and industry professionals on cutting-edge developments in Human-Computer Interaction (HCI) with a particular focus on Asia.",
         "location": "Online",
@@ -9,17 +20,6 @@
         "image": "asianchi.png",
         "certificate": "",
         "link": "https://www.asianchi.net/home_1"
-    },
-    {
-        "id": 6,
-        "name": "Gawad Saliksisk 2024",
-        "description": "An event in recognition of the outstanding achievements of faculty members and students in research.",
-        "location": "Manila, Philippines",
-        "date": "2025-02-05",
-        "tech": ["Research", "HCI", "AI"],
-        "image": "gawad_saliksik_2025.jpg",
-        "certificate": "",
-        "link": "https://www.facebook.com/TheLaSallian/posts/pfbid02YSfwiZvgVoeP9CCnNp5jhQd2wbqXKDwZr3dqyBNqbcQuwjUNHeZ4wh1qWmqTkSwMl"
     },
     {
         "id": 5,
