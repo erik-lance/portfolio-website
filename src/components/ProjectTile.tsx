@@ -33,7 +33,6 @@ export default function ProjectTile(
             sx={{
                 maxHeight: 400,
                 height: "100%",
-                boxShadow: 5,
                 bgcolor: "transparent",
             }}
         >
@@ -50,7 +49,6 @@ export default function ProjectTile(
                         alt={title}
                         sx={{
                             maxHeight: 138,
-                            boxShadow: 3,
                             objectFit: "bottom"
                         }}
                     />
@@ -89,12 +87,16 @@ export default function ProjectTile(
             <CardActions disableSpacing>
 
                 {/* If there is a git link then add git button */}
-                {github && <IconButton aria-label="github" href={github} target="_blank">
+                {github && <IconButton aria-label="github" href={github} target="_blank"
+                    color='primary'
+                >
                     <GitHubIcon />
                 </IconButton>}
 
                 {/* If there is a link then add link button*/}
-                {link && <IconButton aria-label="link" href={link} target="_blank">
+                {link && <IconButton aria-label="link" href={link} target="_blank"
+                    color='primary'
+                >
                     <LinkIcon />
                 </IconButton>}
 
