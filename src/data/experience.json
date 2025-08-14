@@ -1,6 +1,16 @@
 [
 	{
 		"id": 1,
+		"position": "Financial Planning & Services SAP ABAP Software Engineer",
+		"company": "Procter & Gamble",
+        "location": "BGC Taguig City, Philippines",
+        "start_date": "August 2025",
+        "description": "Developed a web application for a client using Java, Spring, and Hibernate.",
+        "skills": ["SAP", "ABAP", "S4 Hana"],
+        "link": "https://ph.pg.com/"
+	},
+    {
+		"id": 2,
 		"position": "Java Software Engineer Intern",
 		"company": "Orange & Bronze Software Labs Inc.",
         "location": "Makati City, Philippines",
@@ -11,7 +21,7 @@
         "link": "https://www.orangeandbronze.com/"
 	},
     {
-        "id": 2,
+        "id": 3,
         "position": "Beta Microsoft Learn Student Ambassador",
         "company": "Microsoft",
         "location": "Makati, Philippines",
@@ -22,7 +32,7 @@
         "link": "https://learn.microsoft.com/en-us/training/"
     },
     {
-        "id": 3,
+        "id": 4,
         "position": "President and Microsoft Learn Student Ambassador Representative",
         "company": "DLSU Microsoft Student Community",
         "location": "Manila, Philippines",
@@ -33,11 +43,12 @@
         "link": "https://facebook.com/DLSUMSC"
     },
     {
-        "id": 4,
+        "id": 5,
         "position": "Research Assistant",
         "company": "DLSU - Center for Empathetic Human Computer-Interactions",
         "location": "Manila, Philippines",
         "start_date": "March 2022",
+        "end_date": "Dec 2024",
         "description": "Conducted research on Computational Commensality; Co-authored CeHCI papers and assisted with experiments and data collection.",
         "skills": ["Research", "HCI"],
         "link": "https://www.dlsu.edu.ph/research/research-centers/adric/cehci/"
