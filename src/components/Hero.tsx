@@ -2,6 +2,23 @@ import { HorizontalRule } from "@mui/icons-material";
 import { Avatar, Box, Grid, Stack } from "@mui/material";
 import Typography from "@mui/material/Typography"
 
+/**
+ * Hero component that displays the main introduction section on the home page.
+ * 
+ * Features:
+ * - Profile picture with Avatar component
+ * - Responsive grid layout (side-by-side on desktop, stacked on mobile)
+ * - Name, title, and personal introduction
+ * - Highlighted achievements in styled boxes
+ * - Fully responsive with different layouts for mobile, tablet, and desktop
+ * 
+ * Responsive Breakpoints:
+ * - xs (mobile): Stacked layout, centered avatar
+ * - sm (tablet): Stacked layout with padding
+ * - md/lg (desktop): Side-by-side layout with avatar on left
+ * 
+ * @returns {JSX.Element} Hero section component for the home page
+ */
 export default function Hero() {
     return (
         <div className="flex flex-col items-center justify-center">
