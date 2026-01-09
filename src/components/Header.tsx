@@ -1,5 +1,16 @@
 import Link from "next/link";
 
+/**
+ * Header component that provides consistent navigation across all pages.
+ * Displays a navigation bar with links to all major sections of the portfolio.
+ * 
+ * Features:
+ * - Fixed positioning at top of page
+ * - Responsive layout with flexbox
+ * - Links to: Home, Education, Experience, Projects, Certifications, Events, Resume
+ * 
+ * @returns {JSX.Element} Navigation header component
+ */
 export default function Header() {
     return (
         <div className='w-full flex flex-row justify-between items-center p-4'>
