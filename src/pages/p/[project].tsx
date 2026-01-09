@@ -119,6 +119,7 @@ export default function Project() {
                             <IconButton
                                 href={projectData.github}
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 className="flex-grow"
                                 color='primary'
                             >
@@ -130,6 +131,7 @@ export default function Project() {
                             <IconButton
                                 href={projectData.link}
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 className="flex-grow"
                                 color='primary'
                             >

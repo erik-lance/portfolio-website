@@ -28,7 +28,7 @@ export default function Experience() {
                             key={job.id}
                             secondaryAction={
                                 <IconButton edge="end" aria-label="open company page"
-                                    href={job.link} target="_blank" color="primary"
+                                    href={job.link} target="_blank" rel="noopener noreferrer" color="primary"
                                 >
                                     <BusinessIcon />
                                 </IconButton>
