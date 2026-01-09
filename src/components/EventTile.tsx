@@ -27,6 +27,7 @@ export default function EventTile(
             <CardActionArea
                 href={link}
                 target="_blank"
+                rel="noopener noreferrer"
             >
                 {image && (
                     <CardMedia

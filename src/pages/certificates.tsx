@@ -42,13 +42,13 @@ export default function Certificates() {
                     }}
                 >
                     <Stack>
-                        <Link href="https://docs.microsoft.com/en-us/users/erik-lance/">
+                        <Link href="https://docs.microsoft.com/en-us/users/erik-lance/" target="_blank" rel="noopener noreferrer">
                             Microsoft Learn
                         </Link>
-                        <Link href="https://www.cloudskillsboost.google/public_profiles/42b93348-d68a-41c5-9e02-fa8edb44180f">
+                        <Link href="https://www.cloudskillsboost.google/public_profiles/42b93348-d68a-41c5-9e02-fa8edb44180f" target="_blank" rel="noopener noreferrer">
                             Google Cloud Skills Boost
                         </Link>
-                        <Link href="https://www.linkedin.com/in/erik-lance-tiongquico/details/certifications/">
+                        <Link href="https://www.linkedin.com/in/erik-lance-tiongquico/details/certifications/" target="_blank" rel="noopener noreferrer">
                             Posted certificates on LinkedIn
                         </Link>
                     </Stack>

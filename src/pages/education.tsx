@@ -28,7 +28,7 @@ export default function Education() {
                             key={school.id}
                             secondaryAction={
                                 <IconButton edge="end" aria-label="open school page"
-                                    href={school.link} target="_blank" color="primary"
+                                    href={school.link} target="_blank" rel="noopener noreferrer" color="primary"
                                 >
                                     <SchoolIcon />
                                 </IconButton>

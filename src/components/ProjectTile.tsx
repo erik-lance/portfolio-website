@@ -87,14 +87,14 @@ export default function ProjectTile(
             <CardActions disableSpacing>
 
                 {/* If there is a git link then add git button */}
-                {github && <IconButton aria-label="github" href={github} target="_blank"
+                {github && <IconButton aria-label="github" href={github} target="_blank" rel="noopener noreferrer"
                     color='primary'
                 >
                     <GitHubIcon />
                 </IconButton>}
 
                 {/* If there is a link then add link button*/}
-                {link && <IconButton aria-label="link" href={link} target="_blank"
+                {link && <IconButton aria-label="link" href={link} target="_blank" rel="noopener noreferrer"
                     color='primary'
                 >
                     <LinkIcon />
